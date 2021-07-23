@@ -42,7 +42,6 @@ class Game {
 
             this.input.prompt();
             this.input.on('line', input => {
-                console.log(input);
                 this.player.processInput(input, this.monsters);
                 this.clearDeadMonsters();
                 if(!this.checkEndCondition()) {
