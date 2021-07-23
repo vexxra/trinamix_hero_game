@@ -69,12 +69,12 @@ class Game {
 
     checkEndCondition() {
         if (!this.monsters.some(monster => monster.isAlive())) {
-            this.endGame();
             console.log("You win");
+            this.endGame();
             return true;
         } else if (!this.player.isAlive()) {
-            this.endGame();
             console.log("You lose");
+            this.endGame();
             return true;
         } else {
             return false;
